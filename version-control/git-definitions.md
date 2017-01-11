@@ -2,7 +2,7 @@
 
 **Instructions: ** Define each of the following Git concepts.
 
-* What is version control?  Why is it useful? 
+* What is version control?  Why is it useful? Answer below:
     Version Control is being able to clone a file or directory and branch off making files you can edit individually without effecting the original version. Then when all is complete you can merge them back together to have your final product. It is useful to divide and conquor your work and also be able to have an easy time debugging if anything is wrong with multiple saved versions at different stages of completion.
 * What is a branch and why would you use one?
     A branch is a clone of a file or "master" directory that can be edited and worked on without effecting the original. One would use one for exactly that reason.
