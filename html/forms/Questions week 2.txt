@@ -1,0 +1,15 @@
+Questions
+
+My understanding of a browser is it is software that gives you access to the internet where you can visit website and access information. 
+
+browser has a client/server relationship with the internet where the browser, the "client" requests info from the internet "server". 
+
+render is to take html code from the server and display it to the browser so you see what you see
+
+HTML is Hyper Text Markup Language and it it what is used to make websites. 
+A tag has a beginning and an end tag, anything inbetween the tags is the element or node of HTML. When you wrap text in a tag you are giving it extra meaning. An attribute tells a tag how to behave or adjusts its function, for example an anchor <a href=""></a> href is the attribute to the <a> tag. Block elements are like the <p> tag because they block off a space for inline elements like <img> and <a> to fit inside.
+
+The head is the info that goes in the tab of the website and doesn't appear on the page. body is the body of the page usually has a paragraph tag in it for text. form is a way to input info to contribue or be added to another page, example asking for email and name. div just divides the tags into a section it is a generic container and doesn't necessarily represent anything.
+Span is an inline element that sets up for CSS and phrases content
+Select provides a menu of options and is an HTML tag. H2 is the second most important header on the page. ol and ul are ordered list and unordered list and they create lists with bullet numbers and bullet points respectively.
+table makes a table with tr being its table rows and td being the data in the rows. 
