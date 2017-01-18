@@ -1,0 +1,13 @@
+#contact-info p { font-size: .8em; }
+
+.job { background-color:#e9e5dc;
+   border: 2px;
+   border-radius: 8px;
+   padding: 3px 5px 3px 5px;
+   margin-top: 2px;
+   }
+section:hover { background-color: yellow;}
+
+ .smaller-text { font-size: .8em; }
+
+ section>section.volunteer-gig { font-size: 3em; }
