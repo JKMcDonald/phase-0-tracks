@@ -1,0 +1,33 @@
+Variable is a place where you can assign a value to something and call it whenever needed. Variable are useful because they can be used and reused and store long lines of code in a single word.
+
+It will start by inputting the value's of first_name and last_name. Then it will add those two strings together to form one string that it will ultimately assign to the variable full_name.
+
+string = characters strung together and sorrounded by "" an example would be someone's name "Kyle".
+integer = a number an example is someone's age Kyle's_age = 28
+float = any integer with a decimal place and a number after that: an example could be the specific temperature of 39.5 degrees farenheit
+nil = the absence of value or somehthing that is uncomputable: for example adding a string to an integer = nil (there is no answer)
+boolean = a true or false statement. the variable I_have_brown_hair = true
+
+Algorithms
+
+An algorithm is directions for the computer to carry out a task, they are very specific and detailed assuming no prior knowledge or instinct. 
+
+Lists arrays stacks, 
+sorting and searching
+2 ecamples of categories of algorithms
+
+A method is a reusable code that performs a function and is not impacted by anything outside of the method.
+A progrmamer might choose to use a method if they were to be repeating the same function again later on and wanted to call it multiple times.
+
+return value = what a method returns after being called
+side effect = a possible added return value in the form usually of a puts statement that is printed to the screen in addition to the expected return value
+parameter = the value that you put in a method to be used
+argument = when the parameter is used in the method in an equation or function it is known as the argument
+implicit return = it is not necessary to type return under a method as it is implicitely assumed that what you are typing is what the method will return
+
+global vs. method scope is the scope to whhich what variables and code affects what sorrounding a method. things within the method scope will only effect the method and have no effect on the outside code whereas global scope means that it has an affect not only in the method but also on the code sorrounding it - much larger and needs to be more cautious over. 
+
+Control flow is the order in which individual statements, instructions, or funcion calls of an imperative program are executed or evaluated. 
+
+loops can influence the control flow by restarting and continuing code until a certain argument is met. 
+if/elsif/else statements can control flow by going through a series of responses based on criteria met earlier and calling the correct response in an ordered fashion. while and until loops are useful loops that set a parameter on when to start and stop a loop so no to acheive an infinite loop. 

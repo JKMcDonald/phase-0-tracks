@@ -99,7 +99,7 @@ if process == "encrypt"
 	password = gets.chomp
 	puts encrypt(password)
 elsif process == "decrypt"
-	puts "Enter password"
+	puts "Enter password	"
 	password = gets.chomp
 	puts decrypt(password)
 else
