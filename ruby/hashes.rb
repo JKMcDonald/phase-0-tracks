@@ -22,10 +22,63 @@ end
 interior_decor = {
 	:name => name,
 	:age => age.to_i,
-	:children => children.to_i
-	:decor_theme => decor_theme
-	:baths => baths.to_i
+	:children => children.to_i,
+	:decor_theme => decor_theme,
+	:baths => baths.to_i,
 	:discount => discount
 }
 
-puts "would you like to make any changes?" 
+
+
+
+# interior_decor = {
+# 	:name => "Kyle",
+# 	:age => 28,
+# 	:children => 0,
+# 	:decor_theme => "50's",
+# 	:baths => 2,
+# 	:discount => "yes"
+# }
+
+puts "would you like to make any changes? (yes/no)" 
+interior_decor.each do |key, value| 
+puts "your current #{key} is: #{value}"
+end
+change = gets.chomp
+
+if change == "yes"
+	puts "Which section would you like to change?"
+		interior_decor.each do |key, value| 
+ 		puts "your current #{key} is: #{value}"
+		end
+	section = gets.chomp
+	puts "what would you like to update #{section} to?"
+	update = gets.chomp
+
+	number_sections = ['age', 'children', 'baths', 'budget', 'happinss_scale']
+ 	
+ 	if number_sections.include?(section)
+ 		update = update.to_i
+ 	end 
+ 	interior_decor[section.to_sym] = update
+end
+
+#https://www.codeschool.com/courses/try-ruby
+puts "your current decor theme is:"
+interior_decor.each do |key, value| 
+puts "#{key} is: #{value}"
+end
+
+#... some code to iterate over the hash
+
+# look into using Hash#each
+
+# Your current decor theme is:
+# name - Kyle
+# age - 28
+# children - 0
+# decor_theme - 50's
+# baths - 2
+# discount - yes
+
+
