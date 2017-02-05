@@ -41,3 +41,33 @@
 end
 
 p fib(6)
+
+#pseudocoding bubble sort: start by defining a method with an array as the parameter
+#then assigning a variable to the length of the array so we know how many times we need to swap
+#next we will define a loop where we start with a false value that needs to be proven true to end the loop
+#subtract 1 from the length of the array and thats how many times you do the loop or until swapped equals true
+#If the item your on is larger than the next item swap them and return true
+#continue to do that until the item does not need to be swapped
+#print the array after all swaps are complete. 
+
+def bubble_sort(array)
+  n = array.length
+  loop do
+    swapped = false
+
+    (n-1).times do |i|
+      if array[i] > array[i+1]
+        array[i], array[i+1] = array[i+1], array[i]
+        swapped = true
+      end
+    end
+
+    break if not swapped
+  end
+  array
+end
+
+array = [10, 3, 2, 1, 4, 5, 6, 8, 7, 9]
+
+
+p bubble_sort(array)
