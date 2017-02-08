@@ -1,0 +1,19 @@
+review_and_reflect_ch_5
+
+Data structures are useful in programming because they can organize large quantities of information and make is accessable and retreivable 
+
+An array is a series of objects all of which are the same size and type. The characteristics are its indeces, they can be a certain data type, it can be a certain length, there are lots of characteristics. 
+
+An array might be well suited for a family of ducks names (all strings), or a colection of students grades
+
+A hash is any function that can be used to map data of arbitrary size to data of fixed size. it's characteristics are the key and value which allow you to access information in the hash. 
+
+A has might be well suited for documenting different animals and the number of babies they had this year. Also documenting a room and all it contains.
+
+Iteration is useful because you can iterate through a number of characters or values and effect them all with the same thing. In other words its a way to effect a data structure or multivle values all with one method or forumla without having to do them individually. 
+
+A real life task that woudl rewquire iteration would be signing a multiple sign tax document - read sign repeat. 
+
+A block is similar to a loop or an iteration in that you do something to a parameter a certain number of times or until a value is reached. 
+
+A blcoks parameter is a variable that comes from somewhere outside the block, usually an array or hash you are performing the block too. 

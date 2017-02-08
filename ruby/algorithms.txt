@@ -1,0 +1,17 @@
+How to work an elevator:
+
+the pad with the numbers is on the wall where the elevator opens. when you originally walk into the elevator scan left and right for that pad.
+The robot will start by asking which floor to press:
+wait for a response - if none after 5 seconds ask again
+once given the number press the corressponding button on the wall by scanning from top to bottom the available buttons/floors and pushing the right one.  wait for the door to close and the elevator to begin to move. upon arriving at your floor the door will open, walk out.
+
+everyday algorithms I do without noticing:
+
+Brushing my teeth:
+Pick up the toothbrush
+apply toothpaste
+put in your mouth and begin by scrubbing the front teeth making your way back and around until every tooth has been scrubbed from every angle
+rinse with water and spit out remainder into sink 
+brush your tongue and spit out remainder into sink
+rinse and dry face on a towel. 
+end
