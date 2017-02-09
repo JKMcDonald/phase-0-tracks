@@ -7,11 +7,10 @@ class Santa
 		@name = name
 		@gender = gender
 		@ethnicity = ethnicity
-		reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		age = 0
+		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+		@age = rand(0..140)	
 	end
 	
-
 	def speak
 		puts "Ho, ho, ho! Haaaaappy Holidays!"
 	end
