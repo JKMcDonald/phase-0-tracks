@@ -1,0 +1,6 @@
+# Pseudocode for guessing game
+
+#Start by defining a class called word_guesser. def initialize with @guess_count = 0. Also make @word = "" @is_over = false and then end. define a new class method that replaces characters of a string with "_" so the guesser can see how many letters it is. when the guesser guesses a letter, define a method that changes it back from "_" to the letter it was revealing part of the solution. def a method that allows the number of guesses to be made equal to word.length. and Add one to the guess count every guess. 
+
+Write a puts and gets.chomp statement to ask for the word from user 1. Hide that word revealing _ for each letter. Ask the user to guess with a puts prompt and gets.chomp. if correct change letter and puts Good Job! Guess again! if incorrect puts Sorry! try again!
+both times moving through the loop and adding 1 to guess count. when a guess is made the letter should be removed from the string of the alphabet 

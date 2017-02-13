@@ -1,0 +1,18 @@
+Review_and_reflectch6
+
+1. Class - A class is a blueprint from which individual objects are created in object oriented programs like Ruby
+ 	* State - A state is a part of a method usually represented in instance variables that can be used in a method to do something to that class. 
+	* The return of a method in a certain state within a Class. Basically you use states in a class method to create some type of behaviour like making a dancer twirl.
+	* Instance variable - is an example of state for a class that is defined in the initialization and by adding an @ symbol is usable throughout the methods defined in the Class
+	* Instance Method - Is a method that pertains to a particular instance of a Class that takes on the initialized instance variables of that instance as states and can return behaviours. 
+
+2. Attributes are data types that are consistant throughout a Class like a person might be athletic, therefore Athletic is an attribute for that class, examples could include instance variables and therefore can refer to the state of a class. 
+
+3. A real world object is a bycicle. It's attributes might be its age, how many wheels it has, what brand it is, whether it has a basket, what type of tires it has, etc. 
+
+4. The initialize method runs every time a new instance is created of a Class. The purpose is to produce beginner attributes to instance so that instance methods can be performed using them. It gives the instance method attributes right off the bat to assist and direct it's behaviours
+
+5. A module is a group of functions or methods that can be applied across multiple classes.
+
+6. You can use a module by calling it like a class but instead of only being available to that instance of a specific class it is also available to other instances of any class. It is a way to organize methods. 
+
