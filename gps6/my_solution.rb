@@ -1,5 +1,5 @@
-# Virus Predictor
-
+# require_relative is requiring a file that starts in the same directory as the file you are coding in. require is the same but it starts looking in other predefined directories
+# require_relative does not change its behavior whereever you are and require does
 # I worked on this challenge [by myself, with: ].
 # We spent [#] hours on this challenge.
 
@@ -16,14 +16,19 @@ class VirusPredictor
     @population_density = population_density
   end
 
+#calls instance method's speed_of_spread and  predicted_deaths and returns speed_of_spread
+
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
+    predicted_deaths
     speed_of_spread(@population_density, @state)
   end
 
   private
 
-  def predicted_deaths(population_density, population, state)
+# passing population density, population, and state as parameters into a conditional if statement thereby determining how many deaths 
+# a state will incurr in a given outbreak. then printing a string and returning nil
+
+  def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -40,6 +45,8 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
+
+# takes in parameters of population density and state and prints the string of how fast it will spread in months based on if conditianl results
 
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
@@ -69,6 +76,10 @@ end
 # DRIVER CODE
  # initialize VirusPredictor for each state
 
+STATE_DATA.each do |key, value|
+  full_report = VirusPredictor.new(key, value[:population_density], value[:population] )
+  full_report.virus_effects
+end
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
 alabama.virus_effects
@@ -84,4 +95,25 @@ alaska.virus_effects
 
 
 #=======================================================================
-# Reflection Section
+#REFLECTION
+ 
+# The differences between the two different hash syntaxes shown in the state_data file is one uses "" and  => and the other uses : to define a key
+# Rewuire relative starts searching in the current directory you are in whereas require starts elsewhere, usually assigned by the coder
+# You can iterate through a hash with a loop or .each method, also .map, .map! and other enumarable methods.
+# When refactoring virus_effects the variables seemed repetative 
+# I most solidified the features of a Constant Variable. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Reflection Section
