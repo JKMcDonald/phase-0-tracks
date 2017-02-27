@@ -2,7 +2,7 @@ Review_and_reflectch6
 
 1. Class - A class is a blueprint from which individual objects are created in object oriented programs like Ruby
  	* State - A state is a part of a method usually represented in instance variables that can be used in a method to do something to that class. 
-	* The return of a method in a certain state within a Class. Basically you use states in a class method to create some type of behaviour like making a dancer twirl.
+	* method behaviour - The return of a method in a certain state within a Class. Basically you use states in a class method to create some type of behaviour like making a dancer twirl.
 	* Instance variable - is an example of state for a class that is defined in the initialization and by adding an @ symbol is usable throughout the methods defined in the Class
 	* Instance Method - Is a method that pertains to a particular instance of a Class that takes on the initialized instance variables of that instance as states and can return behaviours. 
 

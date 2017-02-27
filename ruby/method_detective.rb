@@ -37,3 +37,5 @@ p "z".ord
 
 p "How many times does the letter 'a' appear in this string?".count "a"
 #=> 4
+
+read over all checks out!

@@ -80,5 +80,6 @@ end
 # decor_theme - 50's
 # baths - 2
 # discount - yes
+CHECKS OUT
 
 
