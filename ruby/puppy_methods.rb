@@ -1,5 +1,9 @@
 class Puppy
 
+	def initialize
+		puts "initializing new puppy instance..."
+	end
+
   def fetch(toy)
     puts "I brought back the #{toy}!"
     toy
@@ -24,14 +28,12 @@ class Puppy
 
 
 	def howl_at_the(object)
-		puts "Howlllll #{object}!"
+		puts "Howlllll (#{object})!"
 	end
 
-	def initialize
-		puts "initializing new puppy instance..."
-	end
 end
 
+# driver code ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  snoop = Puppy.new
 
@@ -44,6 +46,48 @@ snoop.roll_over
 snoop.dog_years(3)
 
 snoop.howl_at_the("moon")
+
+# Class Fish ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class Dog
+
+	def initialize(name, breed, hairstyle)
+		@name = name
+		@breed = breed
+		@hair_style = hairstyle
+	end
+
+def fetch(toy)
+	puts "#{@name} fetches the #{toy}."
+	toy
+end
+
+def bark
+	puts "rufff!!"
+end
+
+end
+
+# Driver Code ------------------------------------------------------------------------------------------------------------------------------
+
+count = 0
+instances = []
+loop do 
+	instance = Dog.new('fido', 'doberman', 'shorthair')
+	instances << instance
+	count += 1
+	break if count == 50
+end
+
+p instances
+
+instances.each do |instance|
+	instance.fetch('ball')
+	instance.bark
+end
+
+
+# Another Class ------------------------------------------------------------------------------------------------------------------------------
 
 class Fish
 	
