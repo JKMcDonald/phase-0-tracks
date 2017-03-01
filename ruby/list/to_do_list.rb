@@ -26,5 +26,5 @@ class TodoList
 	end
 end
 
-todaywork = TodoList.new(['clean', 'mop'])
-p todaywork.get_items
+todays_work = TodoList.new(['clean', 'mop'])
+p todays_work.get_items
