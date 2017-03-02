@@ -11,12 +11,6 @@ attr_accessor :word, :underline, :guess_count, :total_guesses, :result
 		@result = {}
 	end
 
-	# def guess_letter(letter)
-	# 	if @word.include?(letter)
-	# 		find_index(letter)
-	# 	end
-	# end
-
 	def build_legend
     counter = 0
     @word.chars.each do |char|
@@ -26,12 +20,8 @@ attr_accessor :word, :underline, :guess_count, :total_guesses, :result
     @result 
   end
 
-  # def add_correct(letter)
-# 		find_index(letter)
-# 		@underline.chars  
-# 	end
-
 	def find_index(letter)
+		@indeces = []
 		counter = 0
 		build_legend
 		until counter == @word.length
@@ -55,11 +45,40 @@ attr_accessor :word, :underline, :guess_count, :total_guesses, :result
 
 end
 
+## User Interface --------------------------------------------------------------------------------------------------------------
 
-game = Game.new('elephant')
+puts "enter the word you'd like user 2 to Guess:"
+				word = gets.chomp
+game = Game.new(word)
 
-p game.build_legend
-p game.find_index('e')
+until game.guess_count == game.total_guesses || game.underline == game.word
+
+puts game.underline
+puts "challanger, guess the word one letter at a time:"
+				letter = gets.chomp
+game.find_index(letter)
+	if game.find_index(letter) != []
+			game.switch(letter)
+	else
+		game.guess_count += 1
+	end
+end
+
+if game.underline == game.word
+	puts "way to go you solved the problem!"
+elsif 
+	puts "You lose! try again"
+end
+
+
+
+
+
+
+		
+
+
+
 
 
 
