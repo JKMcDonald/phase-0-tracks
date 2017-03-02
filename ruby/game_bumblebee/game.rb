@@ -46,9 +46,9 @@ attr_accessor :word, :underline, :guess_count, :total_guesses, :result
 end
 
 ## User Interface --------------------------------------------------------------------------------------------------------------
-
+require 'io/console'
 puts "enter the word you'd like user 2 to Guess:"
-				word = gets.chomp
+				word = STDIN.noecho(&:gets)
 game = Game.new(word)
 
 until game.guess_count == game.total_guesses || game.underline == game.word
