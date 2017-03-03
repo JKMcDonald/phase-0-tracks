@@ -1,0 +1,33 @@
+Data Structures
+1. Why are data structures useful in programming?
+Data structures are useful in programming because they can group and organze data under variables that you can locate certain values through abbreviated calling. They are useful for large groups of information that can be stored together under one variable.
+
+Arrays
+2. Define "array" and describe the characteristics of an array.
+ An array is a data structure that has indexes containing elemetents of any data type. the values are accessed by calling the index of the array. 
+
+3. Give two original examples of data sets that an array might be well-suited for.
+a list of numbers, a shopping list of food
+
+Hashes
+4. Define "hash" and describe the characteristics of a hash.
+hash is a data structure containing keys and values where a certain value is assigned and accessed through a key. The key and value are associated in some way or another making it different than an array which can be completely random.
+
+5. Give two original examples of data sets that a hash might be well-suited for.
+ An application asking name, gender, etc.
+ a hash including different types of tree families and the trees they contain. 
+
+Iteration
+6. Why is iteration useful?
+Because you are able to loop through a data structure or string manipulating or printing each character/index/value to create something new.
+
+7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
+If you had a list of names and you needed to uppercase them all for some reason you could iterate through the array calling an upcase on each item returning a new array with all capitalized names.
+
+Blocks
+8. What is a block?
+A block is a way of grouping statements usually after a method. it can start with a do and end with an end or be inbetween two {}.
+
+
+9. What is a block parameter, and where does its value come from?
+A block parameter is a changing variable based on what is being passed into the block. The value comes from outside the block and is usually a data structure or string or any data type.  

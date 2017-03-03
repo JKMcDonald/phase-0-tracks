@@ -14,4 +14,5 @@ describe Game do
 	it "returns a string with guessed letters filled in" do
 		expect(game.switch('e')).to eq 'e_e_____'
 	end
+
 end

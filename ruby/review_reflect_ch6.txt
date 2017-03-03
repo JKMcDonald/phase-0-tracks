@@ -1,0 +1,41 @@
+Classes are blueprints from which individual objects are created in Ruby. State is descriptors of that class that can be illustrated with attributes in the form of instance variables. Behavior is the methods that can be called on the individual class usually utilizing instance variables and for each behavior there is an instqance method that carries it out. 
+
+Attributes are descriptors of a class that can be changed or read throughout an instance in the form of instance variables. an example would be the age of a person or height.
+
+A chair is a real life object, some of its attributed might be height, wood-type, legs, width, etc.
+
+Initialize runs every time a new instance of a class is created and it is basically the building blocks of that instance that are assigned to every instance in that Class. 
+
+Modules are groups of methods that can be used across classes but are not a part of that particular class
+
+Modules are a way of grouping together methods, classes, and constants. Modules give you two major benefits. Modules define a namespace, a sandbox in which your methods and constants can play without having to worry about being stepped on by other methods and constants. Ruby does not support multiple inheritance directly but Ruby Modules have another wonderful use. At a stroke, they pretty much eliminate the need for multiple inheritance, providing a facility called a mixin.
+
+
+module A
+   def a1
+   end
+   def a2
+   end
+end
+module B
+   def b1
+   end
+   def b2
+   end
+end
+
+class Sample
+include A
+include B
+   def s1
+   end
+end
+
+samp=Sample.new
+samp.a1
+samp.a2
+samp.b1
+samp.b2
+samp.s1
+
+Module A consists of the methods a1 and a2. Module B consists of the methods b1 and b2. The class Sample includes both modules A and B. The class Sample can access all four methods, namely, a1, a2, b1, and b2. Therefore, you can see that the class Sample inherits from both the modules. Thus, you can say the class Sample shows multiple inheritance or a mixin.

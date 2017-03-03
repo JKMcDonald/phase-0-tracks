@@ -16,9 +16,10 @@ def calculate(x, operator, z)
 	end
  end
 
-until continue == "done"
-puts "type anything to continue or done to exit (if select done complete one more calculation to exit)"
+loop do 
+puts "type anything to continue or exit to exit (if select exit complete one more calculation to exit)"
     continue = gets.chomp
+    break if continue == "exit"
 puts "What would you like your equation to be?"
  equation = gets.chomp
 
