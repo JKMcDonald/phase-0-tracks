@@ -48,14 +48,16 @@ end
 ## User Interface --------------------------------------------------------------------------------------------------------------
 require 'io/console'
 puts "enter the word you'd like user 2 to Guess:"
-				word = STDIN.noecho(&:gets)
+				word = gets.chomp
 game = Game.new(word)
-
+letters_guessed = []
 until game.guess_count == game.total_guesses || game.underline == game.word
 
+p letters_guessed
 puts game.underline
 puts "challanger, guess the word one letter at a time:"
 				letter = gets.chomp
+				letters_guessed << letter
 game.find_index(letter)
 	if game.find_index(letter) != []
 			game.switch(letter)
@@ -66,8 +68,10 @@ end
 
 if game.underline == game.word
 	puts "way to go you solved the problem!"
+	puts game.word
 elsif 
 	puts "You lose! try again"
+	puts game.word
 end
 
 
