@@ -1,0 +1,59 @@
+1. DISPLAY
+
+sqlite> SELECT * FROM inventory;
+|Jordan's|1999|1
+|Pumps|1985|1
+|crosstrain|2016|2
+|crosstrain|2016|2
+
+2. UPDATE
+
+sqlite> UPDATE inventory SET year=2015 WHERE name_shoe="crosstrain";
+sqlite> SELECT * FROM inventory;
+|Jordan's|1999|1
+|Pumps|1985|1
+|crosstrain|2015|2
+|crosstrain|2015|2
+
+3. SHOW BOTH
+
+SELECT * FROM inventory, stores WHERE inventory.store_id = stores.id;
+|Jordan's|1999|1|1|North Street
+|Pumps|1985|1|1|North Street
+|crosstrain|2016|2|2|South Street
+|crosstrain|2016|2|2|South Street
+
+4. SHOW BOTH WITH LESS COLUMNS
+
+SELECT inventory.name_shoe, stores.location FROM inventory JOIN stores ON inventory.store_id = stores.id;
+Jordan's|North Street
+Pumps|North Street
+crosstrain|South Street
+crosstrain|South Street
+
+5. DELETE FROM
+
+sqlite> DELETE FROM inventory WHERE name_shoe="Pumps";
+sqlite> SELECT * FROM inventory;
+|Jordan's|1999|1
+|crosstrain|2015|2
+|crosstrain|2015|2
+
+6. INNER JOIN
+
+SELECT name_shoe, year, location FROM inventory INNER JOIN stores ON inventory.store_id = stores.id;
+Jordan's|1999|North Street
+crosstrain|2015|South Street
+crosstrain|2015|South Street
+
+7. RIGHT AND FULL OUTER JOIN
+
+sqlite> SELECT name_shoe, year, location FROM inventory RIGHT JOIN stores ON inventory.store_id = stores.id;
+Error: RIGHT and FULL OUTER JOINs are not currently supported
+
+8. LEFT JOIN
+
+sqlite> SELECT name_shoe, year, location FROM inventory LEFT JOIN stores ON inventory.store_id = stores.id;
+Jordan's|1999|North Street
+crosstrain|2015|South Street
+crosstrain|2015|South Street
