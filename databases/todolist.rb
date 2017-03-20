@@ -1,6 +1,7 @@
 require 'sqlite3'
 
 db = SQLite3::Database.new("todolist.db")
+db.results_as_hash = true
 
 create_table_cmd = <<-SQL 
 	CREATE TABLE IF NOT EXISTS list(
@@ -83,6 +84,9 @@ display_tasks(db)
 
 def display_grocery_to_list(db)
 	grocery = db.execute("select * from grocery JOIN store ON store.id = grocery.grocery_list_id")
+	grocery.each do |grocery|
+		puts "Buy #{grocery['quantity']} of #{grocery['food']}"
+	end
 end
 
 display_grocery_to_list(db)
