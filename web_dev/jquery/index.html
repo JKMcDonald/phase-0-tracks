@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>lacrosse</title>
+        <script src="index.js"></script>
+    </head>
+    <body>
+
+    <div id='panel1'>Content</div>
+    <div id='panel2'>Click Here</div>
+    <ol class='list'> <th> The List </th>
+    <li> first </li>
+    <li> second </li>
+    <li> third </li>
+    <li> fourth </li>
+    </ol>
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script>
+    	$(document).ready(function() {
+
+    		$('#panel1').click(function() {
+            alert( "you clicked the link" );
+        });
+
+        $('#panel2').hover(function() {
+        	$(this).fadeOut(1000);
+        	$(this).fadeIn(2000);
+        });
+
+        $('.list').click(function() {
+        	$(this).slideUp();
+        	$(this).slideDown();
+        });
+
+        $('ol').children().css( "border-bottom", '3px double red');
+    	});
+    	</script>
+    </body>
+</html>
